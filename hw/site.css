@@ -1,0 +1,25 @@
+:root { --bg: #F6F2FB; --card: #FFFFFF; --ink: #261A38; --muted: #6A5D80; --line: #DCD2EC; --accent: #5C2E9E; --orchid: #C0288A; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17101F; --card: #241A31; --ink: #F1EBFA; --muted: #B5A8CC; --line: #3A2B50; --accent: #BDA0FF; --orchid: #FF85D1; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0 20px 80px; background: var(--bg); color: var(--ink);
+  font: 17px/1.7 "New York", "Iowan Old Style", Georgia, "Times New Roman", serif; }
+/* five faint staff lines behind the masthead */
+header { max-width: 680px; margin: 0 auto; padding: 44px 0 20px;
+  background: repeating-linear-gradient(to bottom, transparent 0 15px, color-mix(in srgb, var(--accent) 14%, transparent) 15px 16px) top / 100% 80px no-repeat; }
+main { max-width: 680px; margin: 0 auto; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--accent);
+  font-size: 1.9rem; font-style: italic; font-weight: 600; }
+.brand img { width: 44px; height: 44px; border-radius: 10px; }
+h1 { font-size: 2.1rem; font-weight: 600; line-height: 1.2; margin: 18px 0 6px; }
+h2 { font-size: 1.25rem; font-style: italic; font-weight: 600; color: var(--accent); margin: 34px 0 6px; }
+.lede { color: var(--muted); margin: 0 0 22px; }
+.note { border-left: 4px solid var(--orchid); background: var(--card); padding: 14px 18px; margin: 24px 0; }
+.note p { margin: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; width: 30%; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 0.9rem; margin-top: 52px; border-top: 1px solid var(--line); padding-top: 18px; }
+footer a { margin-right: 16px; }
